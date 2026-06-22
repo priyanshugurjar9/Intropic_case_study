@@ -1,4 +1,4 @@
-# FTSE Russell US Index Case Study - Section D
+# US Index Case Study - Section D
 
 **Author:** Priyanshu Gurjar  
 **Purpose:** Intropic Research Analyst Case Study
