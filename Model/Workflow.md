@@ -1,11 +1,11 @@
-```mermaid
+````mermaid
 flowchart TD
-    A["Load and validate US100 data"] --> B["Calculate float shares, market caps and weights"]
-    B --> C["Calculate tracking AUM, RTX weight and GOOG holdings"]
-    C --> D["Model ORCL free-float increase"]
-    D --> E["Delete AAPL and calculate top 10 flows"]
-    E --> F["Compare flows with 30-day Yahoo Finance ADV"]
-    F --> G["Model AMZN 20-for-1 stock split"]
-    G --> H["Run validation and sensitivity checks"]
-    H --> I["Present final tables and charts"]
+    A["Load the data"] --> B["Calculate index weights"]
+    B --> C["Calculate passive fund holdings"]
+    C --> D["Increase ORCL free float"]
+    D --> E["Remove AAPL and calculate trades"]
+    E --> F["Compare trades with daily volume"]
+    F --> G["Apply the AMZN stock split"]
+    G --> H["Check the results"]
+    H --> I["Show final answers and charts"]
 ```
