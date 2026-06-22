@@ -1,4 +1,4 @@
-````mermaid
+```mermaid
 flowchart TD
     A["Load the data"] --> B["Calculate index weights"]
     B --> C["Calculate passive fund holdings"]
