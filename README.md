@@ -21,7 +21,7 @@ Python notebook supported by the original constituent dataset.
 
 ### [`US INDEX CASE STUDY.pdf`](./US%20INDEX%20CASE%20STUDY.pdf)
 
-The research component of Section D, focused on Linde plc and the Russell US
+The research component of US Indexes, focused on Linde plc and the Russell US
 Indexes. It covers:
 
 - Russell's quarterly and intra-quarter share and free-float update process;
@@ -33,11 +33,6 @@ Indexes. It covers:
   and
 - remaining uncertainties and the additional evidence needed to increase
 confidence.
-
-### [`US INDEX CASE STUDY.docx`](./US%20INDEX%20CASE%20STUDY.docx)
-
-The editable Word version of the research report. Its analysis and conclusions
-match the submitted research PDF.
 
 ### [`US100_Modelling_Study_Report.pdf`](./US100_Modelling_Study_Report.pdf)
 
@@ -68,31 +63,7 @@ The complete executable analytical model and audit trail. It includes:
 
 ### [`Model/US100_constituents (1) (1).csv`](./Model/US100_constituents%20%281%29%20%281%29.csv)
 
-The original 100-constituent dataset used by the notebook. The filename is
-referenced directly by the code, so it should remain unchanged inside the
-`Model/` folder beside the notebook.
-
-### `README.md`
-
-This repository guide, including the project structure, methodology, model
-architecture and execution instructions.
-
-## Research Framework
-
-The research report applies the supplied FTSE Russell methodology and relevant
-SEC filings to two areas.
-
-### Shareholder Structure
-
-1. Frequency and thresholds for shares-outstanding and free-float updates.
-2. Reconstruction of Linde's shares and free-float values.
-3. Use of SEC filings to forecast future Russell float changes.
-
-### Country Classification
-
-1. FTSE Russell's Home Country Indicator and assets/revenue test.
-2. Linde's likely classification in the 2020 and 2021 June Reconstitutions.
-3. Explicit uncertainty analysis and steps required to increase confidence.
+The original 100-constituent dataset used by the notebook.
 
 ## Model Architecture
 
@@ -129,43 +100,6 @@ The US100 model follows six stages:
    Assertions verify that weights sum to 100%, AAPL sale proceeds equal
    purchases, net flow rounds to zero and the AMZN split leaves dollar exposure
    unchanged.
-
-## Modelling Questions
-
-| Question | Output |
-|---|---|
-| Q1 | Total estimated AUM tracking US100 |
-| Q2 | Current RTX index weight |
-| Q3 | GOOG passive holding in dollars and shares |
-| Q4 | ORCL's weight at 80.3% free float |
-| Q5 | Top 10 absolute flows after deleting AAPL |
-| Q6a | Flow pressure as a multiple of 30-day ADV |
-| Q6b | Effect of a 20-for-1 AMZN stock split |
-
-## Headline Model Results
-
-- Tracking AUM: approximately **$940.19bn**
-- RTX weight: **0.6276%**
-- GOOG passive holding: **11,889,500 shares**, approximately **$26.80bn**
-- ORCL weight at 80.3% free float: **0.6621%**
-- Largest AAPL deletion flow: approximately **-$91.69bn**
-- Largest liquidity impact: AAPL at **13.28x ADV**
-- AMZN split: shares increase by 20x and price falls by 20x, while passive
-  value and index weight remain unchanged
-
-## Running the Notebook
-
-### Requirements
-
-- Python 3.10 or later
-- pandas 2.2.3
-- Jupyter Notebook, JupyterLab, VS Code, Anaconda or Google Colab
-
-Install pandas if required:
-
-```bash
-python -m pip install pandas==2.2.3
-```
 
 ### Instructions
 
