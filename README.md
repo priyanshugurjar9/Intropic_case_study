@@ -134,8 +134,7 @@ divided by tracking AUM. This would not produce weights summing to 100%.
 Therefore, the model uses the standard index-weight definition:
 
 ```text
-Index weight = security float market capitalisation
-               / total index float market capitalisation
+Index weight = security float market capitalisation / total index float market capitalisation
 ```
 
 Tracking AUM is then used to translate index weights and weight changes into
@@ -152,10 +151,3 @@ The reports and model draw primarily on:
 - the Intropic Tracking Guide;
 - the supplied US100 constituent dataset; and
 - Yahoo Finance daily share-volume data for the stated ADV window.
-
-## Reproducibility
-
-The notebook has been tested from a clean folder with the exact dataset
-filename included in this repository. It loads all 100 constituents, reproduces
-the displayed results and completes its validation controls without requiring
-internet access.
